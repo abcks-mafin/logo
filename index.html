@@ -5,12 +5,22 @@
 <title>에브리워드 로고 확인</title>
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
 <style>
-*, html, body, div, h1, strong, ul, li, a, p, i, span {
+*, html, body, div, h1, h2, strong, ul, li, a, p, i, span {
 	margin:0; padding:0; border:0; list-style:none;
 	text-decoration:none;
 	font-style:normal;
 	vertical-align:top;
 }
+
+h2 {
+	margin-bottom:10px;
+	font-size:16px;
+}
+hr {
+	margin:30px 0;
+	border-top:1px solid #000;
+}
+
 .wrap {
 	padding:20px;
 }
@@ -58,6 +68,15 @@
 	background-image:url('images/logo.svg');
 	background-repeat:no-repeat;
 }
+
+:root {
+  --right-step1:-5%;
+  --right-step2:-3%;
+  --right-step3:-2.2%;
+  --right-step4:-1%;
+  --right-step5:-0%;
+}
+
 @keyframes ER_blinking {
 	0% {transform:scaleY(1);}
 	50% {transform:scaleY(1);}
@@ -68,13 +87,6 @@
   91% {transform:scaleY(1);}
   91.5% {transform:scaleY(0);}
   92% {transform:scaleY(1);}
-}
-:root {
-  --right-step1:-5%;
-  --right-step2:-3%;
-  --right-step3:-2.2%;
-  --right-step4:-1%;
-  --right-step5:-0%;
 }
 @keyframes ER_move {
 	0% {transform:translate(var(--right-step1), 0) rotate(5deg);}
@@ -104,13 +116,24 @@
 <body>
 <div class="wrap">
 
+	<div>
+		<h2>홈페이지에 사용할 애니메이션 로고</h2>
+		<strong class="logo">
+			<span class="slogan">
+				<span class="er"><i class="blinking">매일 쌓이는 혜택. Everyday,</i></span>
+			</span>
+			<span class="brand">에브리워드</span>
+		</strong>
+	</div>
 
-	<strong class="logo">
-		<span class="slogan">
-			<span class="er"><i class="blinking">매일 쌓이는 혜택. Everyday,</i></span>
-		</span>
-		<span class="brand">에브리워드</span>
-	</strong>
+	<hr>
+
+	<div>
+		<h2>고정형 로고(명함 또는 출력용)</h2>
+		<strong>
+			<img src="images/logo_fixed.svg" alt="매일 쌓이는 혜택. Everyday, 에브리워드">
+		</strong>
+	</div>
 
 
 </div>
