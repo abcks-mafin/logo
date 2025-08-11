@@ -108,12 +108,12 @@ hr {
   0% {background-color:var(--everyday-primary);}
   50% {background-color:var(--everyday-primary);}
   50.5% {background-color:var(--reward-primary);}
-  51% {background-color:var(--everyday-primary);}
+  52.5% {background-color:var(--everyday-primary);}
   90% {background-color:var(--everyday-primary);}
   90.5% {background-color:var(--reward-primary);}
   91% {background-color:var(--everyday-primary);}
   91.5% {background-color:var(--reward-primary);}
-  92% {background-color:var(--everyday-primary);}
+  93.5% {background-color:var(--everyday-primary);}
 }
 @keyframes ER_blinking {
   0% {transform:scaleY(1);}
