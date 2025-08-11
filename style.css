@@ -58,12 +58,13 @@ hr {
 }
 .logo .smile {
   display:block;
-  position:absolute; left:7px; bottom:5px; z-index:1;
+  position:absolute; left:7px; bottom:4px; z-index:1;
   width:19px; height:9px;
   animation:smile_move 10s linear infinite alternate;
+  transform-style: preserve-3d;
 }
 .logo .smile img {width:19px; height:9px;}
-.logo .slogan .blinking {
+.logo .blinking {
   display:block;
   width:100%; height:100%;
   background-image:url('images/logo-ER.svg');
@@ -110,25 +111,34 @@ hr {
   /* // 아래로 이동 완료 */
 
   /* 왼쪽으로 이동 */
+  /*
   70%   {transform:translate(calc(var(--right-step1) - 00%), 100%) rotate3d(-5, 5, 0, var(--rorate3d_deg));}
-  70.4% {transform:translate(calc(var(--right-step1) - 08%), 102%) rotate3d(-5, 3, 0, var(--rorate3d_deg));}
-  70.8% {transform:translate(calc(var(--right-step1) - 15%), 103.5%) rotate3d(-5, 1.5, 0, var(--rorate3d_deg));}
+  70.4% {transform:translate(calc(var(--right-step1) - 08%), 101.6%) rotate3d(-5, 3, 0, var(--rorate3d_deg));}
+  70.8% {transform:translate(calc(var(--right-step1) - 15%), 103.4%) rotate3d(-5, 1.5, 0, var(--rorate3d_deg));}
   71.2% {transform:translate(calc(var(--right-step1) - 19%), 105%) rotate3d(-5, 0, 0, var(--rorate3d_deg));}
-  71.6% {transform:translate(calc(var(--right-step1) - 21%), 103.5%) rotate3d(-5, -1.5, 0, var(--rorate3d_deg));}
-  72%   {transform:translate(calc(var(--right-step1) - 27%), 102%) rotate3d(-5, -3, 0, var(--rorate3d_deg));}
+  71.6% {transform:translate(calc(var(--right-step1) - 21%), 103.4%) rotate3d(-5, -1.5, 0, var(--rorate3d_deg));}
+  72%   {transform:translate(calc(var(--right-step1) - 27%), 101.6%) rotate3d(-5, -3, 0, var(--rorate3d_deg));}
   72.4% {transform:translate(calc(var(--right-step1) - 34%), 100%) rotate3d(-5, -5, 0, var(--rorate3d_deg));}
+  */
+  70%   {transform:translate(calc(var(--right-step1) - 00.00%), 100%)   rotate3d(-5, 5.00, 0, var(--rorate3d_deg));}
+  70.4% {transform:translate(calc(var(--right-step1) - 05.67%), 101.6%) rotate3d(-5, 3.33, 0, var(--rorate3d_deg));}
+  70.8% {transform:translate(calc(var(--right-step1) - 11.33%), 103.4%) rotate3d(-5, 1.67, 0, var(--rorate3d_deg));}
+  71.2% {transform:translate(calc(var(--right-step1) - 17.00%), 105%)   rotate3d(-5, 0.00, 0, var(--rorate3d_deg));}
+  71.6% {transform:translate(calc(var(--right-step1) - 22.67%), 103.4%) rotate3d(-5, -1.67, 0, var(--rorate3d_deg));}
+  72%   {transform:translate(calc(var(--right-step1) - 28.33%), 101.6%) rotate3d(-5, -3.33, 0, var(--rorate3d_deg));}
+  72.4% {transform:translate(calc(var(--right-step1) - 34.00%), 100%)   rotate3d(-5, -5.00, 0, var(--rorate3d_deg));}
   /* // 완쪽으로 이동 완료 */
 
   100%  {transform:translate(-36%, 100%) rotate3d(-5, -5, 0, var(--rorate3d_deg));}
 }
 @keyframes smile_move {
-  0% {transform:translate(0, 0); opacity:1;}
-  30% {transform:translate(0, 0); opacity:1;}
+  0% {transform:translate(0, 0) scale(1, 1) rotate3d(0, 0, 0, var(--rorate3d_deg)); opacity:1;}
+  30% {transform:translate(0, 0) scale(1, 1) rotate3d(0, 0, 0, var(--rorate3d_deg)); opacity:1;}
 
   /* 아래로 이동 */
-  33% {transform:translate(0, 110%); opacity:1;}
-  33.1% {transform:translate(0, 110%); opacity:0;}
-  100%  {transform:translate(0, 110%); opacity:0;}
+  33%   {transform:translate(-20%, 110%) scale(.6, .6) rotate3d(-5, -5, 0, var(--rorate3d_deg)); opacity:1;}
+  33.1% {transform:translate(-20%, 110%) scale(.6, .6) rotate3d(-5, -5, 0, var(--rorate3d_deg)); opacity:0;}
+  100%  {transform:translate(-20%, 110%) scale(.6, .6) rotate3d(-5, -5, 0, var(--rorate3d_deg)); opacity:0;}
 }
 
 
