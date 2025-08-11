@@ -92,13 +92,15 @@ hr.div {
   transform-style: preserve-3d;
 }
 .logo .smile {
-  opacity:0;
+  /*opacity:0;*/
   display:block;
   position:absolute; left:7px; bottom:4px; z-index:1;
   width:19px; height:9px;
   animation:
       smile_move 10s linear infinite alternate,
       smile_show 10s linear both;
+  /*animation:
+      smile_move 10s linear infinite alternate;*/
   transform-style: preserve-3d;
 }
 .logo .smile img {width:19px; height:9px;}
