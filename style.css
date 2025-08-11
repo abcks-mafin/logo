@@ -24,7 +24,6 @@ hr {
   background-color:#00f;
 }
 
-
 :root {
   --right-step1:-3%;
   --right-step2:-1%;
@@ -33,6 +32,7 @@ hr {
   --right-step5:1.6%;
   --rorate3d_deg:28deg;
   --everyday-primary:#00802B;
+  --everyday-primary-dark:#006020;
   --reward-primary:#FF8F1E;
 }
 
@@ -107,13 +107,13 @@ hr {
   */
   0% {background-color:var(--everyday-primary);}
   50% {background-color:var(--everyday-primary);}
-  50.5% {background-color:var(--reward-primary);}
-  52.5% {background-color:var(--everyday-primary);}
+  50.5% {background-color:var(--everyday-primary-dark);}
+  51% {background-color:var(--everyday-primary);}
   90% {background-color:var(--everyday-primary);}
-  90.5% {background-color:var(--reward-primary);}
+  90.5% {background-color:var(--everyday-primary-dark);}
   91% {background-color:var(--everyday-primary);}
-  91.5% {background-color:var(--reward-primary);}
-  93.5% {background-color:var(--everyday-primary);}
+  91.5% {background-color:var(--everyday-primary-dark);}
+  92% {background-color:var(--everyday-primary);}
 }
 @keyframes ER_blinking {
   0% {transform:scaleY(1);}
