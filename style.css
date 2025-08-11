@@ -57,10 +57,13 @@ hr {
   transform-style: preserve-3d;
 }
 .logo .smile {
+  opacity:0;
   display:block;
   position:absolute; left:7px; bottom:4px; z-index:1;
   width:19px; height:9px;
-  animation:smile_move 10s linear infinite alternate;
+  animation:
+      smile_move 10s linear infinite alternate,
+      smile_show .1s 7s both;
   transform-style: preserve-3d;
 }
 .logo .smile img {width:19px; height:9px;}
@@ -132,13 +135,16 @@ hr {
   100%  {transform:translate(-36%, 100%) rotate3d(-5, -5, 0, var(--rorate3d_deg));}
 }
 @keyframes smile_move {
-  0% {transform:translate(0, 0) scale(1, 1) rotate3d(0, 0, 0, var(--rorate3d_deg)); opacity:1;}
-  30% {transform:translate(0, 0) scale(1, 1) rotate3d(0, 0, 0, var(--rorate3d_deg)); opacity:1;}
+  0% {transform:translate(0, 0) scale(1, 1) rotate3d(0, 0, 0, var(--rorate3d_deg));}
+  30% {transform:translate(0, 0) scale(1, 1) rotate3d(0, 0, 0, var(--rorate3d_deg));}
 
   /* 아래로 이동 */
-  33%   {transform:translate(-20%, 110%) scale(.6, .6) rotate3d(-5, -5, 0, var(--rorate3d_deg)); opacity:1;}
-  33.1% {transform:translate(-20%, 110%) scale(.6, .6) rotate3d(-5, -5, 0, var(--rorate3d_deg)); opacity:0;}
-  100%  {transform:translate(-20%, 110%) scale(.6, .6) rotate3d(-5, -5, 0, var(--rorate3d_deg)); opacity:0;}
+  33%   {transform:translate(-25%, 110%) scale(.5, .5) rotate3d(-5, -5, 0, var(--rorate3d_deg));}
+  33.1% {transform:translate(-25%, 110%) scale(.5, .5) rotate3d(-5, -5, 0, var(--rorate3d_deg));}
+  100%  {transform:translate(-25%, 110%) scale(.5, .5) rotate3d(-5, -5, 0, var(--rorate3d_deg));}
+}
+@keyframes smile_show {
+  100% {opacity:1;}
 }
 
 
