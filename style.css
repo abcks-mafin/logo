@@ -16,6 +16,18 @@ hr {
   border-top:1px solid #000;
 }
 
+
+:root {
+  --right-step1:-3%;
+  --right-step2:-1%;
+  --right-step3:0.5%;
+  --right-step4:1.2%;
+  --right-step5:1.6%;
+  --rorate3d_deg:28deg;
+  --everyday-primary:#00802B;
+  --reward-primary:#FF8F1E;
+}
+
 .wrap {
   padding:20px;
 }
@@ -44,8 +56,10 @@ hr {
 .logo .slogan:before {
   position:absolute; left:0; top:0;
   width:100%; height:100%;
-  background-color:#00802B;
+  background-color:var(--everyday-primary);
   border-radius:100%;
+  /*animation:slogan_color 19s linear infinite;*/
+  animation:slogan_color 10s linear infinite;
   content:"";
 }
 .logo .er {
@@ -76,15 +90,23 @@ hr {
   animation:ER_blinking 10s linear infinite;
 }
 
-:root {
-  --right-step1:-3%;
-  --right-step2:-1%;
-  --right-step3:0.5%;
-  --right-step4:1.2%;
-  --right-step5:1.6%;
-  --rorate3d_deg:28deg;
+@keyframes slogan_color {
+  /*
+  0% {background-color:var(--everyday-primary);}
+  96% {background-color:var(--everyday-primary);}
+  98% {background-color:var(--reward-primary);}
+  100% {background-color:var(--everyday-primary);}
+  */
+  0% {background-color:var(--everyday-primary);}
+  50% {background-color:var(--everyday-primary);}
+  50.5% {background-color:var(--reward-primary);}
+  51% {background-color:var(--everyday-primary);}
+  90% {background-color:var(--everyday-primary);}
+  90.5% {background-color:var(--reward-primary);}
+  91% {background-color:var(--everyday-primary);}
+  91.5% {background-color:var(--reward-primary);}
+  92% {background-color:var(--everyday-primary);}
 }
-
 @keyframes ER_blinking {
   0% {transform:scaleY(1);}
   50% {transform:scaleY(1);}
