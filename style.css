@@ -15,6 +15,9 @@ hr {
   margin:30px 0;
   border-top:1px solid #000;
 }
+hr.div {
+  height:10px; background-color:#444;
+}
 .number {
   width:100px;
   height:20px;
@@ -39,6 +42,13 @@ hr {
 .wrap {
   padding:20px;
 }
+.slogan_text {
+  display:inline-block;
+  margin-bottom:20px;
+  padding:5px 10px;
+  color:#fff;
+  background-color:#0045DA;
+}
 .logo {
   display:inline-block;
   position:relative;
@@ -54,6 +64,9 @@ hr {
   padding-top:29.444%;
   background-image:url('images/logo.svg');
   background-repeat:no-repeat;
+}
+.logo2 .brand {
+  background-image:url('images/logo2.svg');
 }
 .logo .slogan {
   overflow:hidden;
